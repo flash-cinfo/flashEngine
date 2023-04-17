@@ -7,7 +7,6 @@
 #include "../utils/Time.h"
 #include "../utils/Log.h"
 #include "../Consts.h"
-#include "../../ShooterConsts.h"
 
 ClientUDP::ClientUDP() {
     _socket.setTimeoutCallback([this](sf::Uint16 id) { return ClientUDP::timeout(id); });
@@ -23,7 +22,7 @@ bool ClientUDP::isWorking() const {
 
 void ClientUDP::connect(sf::IpAddress ip, sf::Uint16 port) {
     _ip = ip;
-    _port = ShooterConsts::MAIN_PORT;
+    _port = port;
     sf::Packet packet;
     packet << MsgType::Connect << Consts::NETWORK_VERSION;
     _working = _socket.bind(0);
