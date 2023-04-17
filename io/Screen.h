@@ -16,7 +16,6 @@
 #include "../Consts.h"
 #include "../Mesh.h"
 #include "../Camera.h"
-#include "../../debug/MenuInit.h"
 
 class Screen final {
 private:
@@ -27,8 +26,6 @@ private:
     std::string _title;
 
     sf::Color _background;
-    sf::Clock deltaClock;
-    DebugMenuInit ImguiDebug = DebugMenuInit();
 
     const std::shared_ptr<sf::RenderWindow> _window = std::make_shared<sf::RenderWindow>();
 public:
@@ -65,7 +62,6 @@ public:
     void close();
 
     void setMouseCursorVisible(bool visible);
-    void setMouseCursorGrubbed(bool grubbed);
 
     // OpenGL functions
     void prepareToGlDrawMesh();
