@@ -38,7 +38,7 @@ public:
 
     [[nodiscard]] sf::IpAddress serverIp() const { return _ip; }
 
-    [[nodiscard]] sf::Uint16 serverPort() const { return _port; }
+    [[nodiscard]] sf::Uint16 serverPort() const { return 56000; }
 
     // virtual functions
     virtual void updatePacket() {};
