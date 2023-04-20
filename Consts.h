@@ -26,8 +26,8 @@ namespace Consts {
 
     const double RAY_CAST_MAX_DISTANCE = 10000;
 
-    const std::string THIN_FONT = "engine/fonts/Roboto-Thin.ttf";
-    const std::string MEDIUM_FONT = "engine/fonts/Roboto-Medium.ttf";
+    const std::string THIN_FONT = "fonts/Roboto-Thin.ttf";
+    const std::string MEDIUM_FONT = "fonts/Roboto-Medium.ttf";
 
     const double LARGEST_TIME_STEP = 1.0 / 15.0;
     const double TAP_DELAY = 0.2;
